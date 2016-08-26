@@ -75,4 +75,77 @@ public class Config extends BaseObject<Long> {
     @Column(value = Columns.UPDATE_TIME)
     private String updateTime;
 
+	public String getValue() {
+		 
+		return value;
+	}
+
+	public Integer getType() {
+		return type;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Long getAppId() {
+		return appId;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public Long getEnvId() {
+		return envId;
+	}
+
+	public String getCreateTime() {
+		return createTime;
+	}
+
+	public String getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setType(Integer type) {
+		this.type = type;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	public void setAppId(Long appId) {
+		this.appId = appId;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public void setEnvId(Long envId) {
+		this.envId = envId;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public void setUpdateTime(String updateTime) {
+		this.updateTime = updateTime;
+	}
+
 }

@@ -32,4 +32,28 @@ public class AppNewForm extends RequestFormBase {
     // 邮箱
     private String emails = "";
 
+	public String getApp() {
+		return app;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public String getEmails() {
+		return emails;
+	}
+
+	public void setApp(String app) {
+		this.app = app;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public void setEmails(String emails) {
+		this.emails = emails;
+	}
+
 }

@@ -27,4 +27,28 @@ public class ConfListForm extends RequestListBase {
     @NotNull
     private Long envId;
 
+	public Long getAppId() {
+		return appId;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public Long getEnvId() {
+		return envId;
+	}
+
+	public void setAppId(Long appId) {
+		this.appId = appId;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public void setEnvId(Long envId) {
+		this.envId = envId;
+	}
+
 }

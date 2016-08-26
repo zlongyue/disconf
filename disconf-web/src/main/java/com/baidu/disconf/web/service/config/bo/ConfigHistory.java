@@ -42,4 +42,24 @@ public class ConfigHistory extends BaseObject<Long> {
     @Column(value = Columns.UPDATE_BY)
     private Long updateBy;
 
+	public void setConfigId(Long configId) {
+		this.configId = configId;
+	}
+
+	public void setOldValue(String oldValue) {
+		this.oldValue = oldValue;
+	}
+
+	public void setNewValue(String newValue) {
+		this.newValue = newValue;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public void setUpdateBy(Long updateBy) {
+		this.updateBy = updateBy;
+	}
+
 }
