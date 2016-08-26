@@ -11,9 +11,9 @@ import org.apache.commons.lang3.StringUtils;
 public enum SupportFileTypeEnum {
 
     /**
-     * 支持properties 特殊处理，支持非properties任意处理
+     * 支持properties ,yaml,yml特殊处理，支持非properties任意处理
      */
-    PROPERTIES(0, "properties"), XML(1, "xml"), ANY(3, "*");
+    PROPERTIES(0, "properties"), XML(1, "xml"), ANY(3, "*"),YAML(4,"yaml"),YML(4,"yml");
 
     private int type = 0;
     private String modelName = null;
