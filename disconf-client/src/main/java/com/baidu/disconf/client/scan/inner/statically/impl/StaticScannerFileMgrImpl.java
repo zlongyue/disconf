@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.lang3.reflect.FieldUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -117,8 +118,8 @@ public class StaticScannerFileMgrImpl extends StaticScannerMgrImplBase implement
                 DisConfigTypeEnum.FILE);
         disconfCenterFile.setRemoteServerUrl(url);
 
-        // fields
-        Field[] expectedFields = disconfFileClass.getDeclaredFields();
+        // fields  
+        Field[] expectedFields = FieldUtils.getAllFields(disconfFileClass);
 
         //
         // KEY & VALUE
